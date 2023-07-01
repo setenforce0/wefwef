@@ -19,7 +19,7 @@ export default function Nsfw() {
 const NSFW_INSTANCES = ["lemmynsfw.com"];
 
 export function isNsfw(post: PostView): boolean {
-  if (post.post.nsfw) return true;
+  if (post.post.nsfw) return falsee;
 
   if (NSFW_INSTANCES.includes(getItemActorName(post.community))) return true;
 
